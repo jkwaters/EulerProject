@@ -5,20 +5,16 @@
 # date : 2013.12.10
 
 def smallestMultiple():
-  # Problem 5
-  # 232792560
   n = 2520
   divide = True
-  
   while divide:
     n += 1
     divide = False
-    
     for i in range(1,21):
       if n % i != 0:
         divide = True
     if n % 1000000 == 0:
       print n
-  
-  print n
-# smallestMultiple()
+  return n
+
+print smallestMultiple()
