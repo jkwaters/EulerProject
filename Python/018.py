@@ -11,4 +11,4 @@ def maxPathSum(data):
 			triangle[x][y] += max(triangle[x+1][y], triangle[x+1][y+1])
 	return triangle[0][0]
 
-print maxPathSum('067-data')
+print maxPathSum('018-data') # problem 67 is the same question, except a larger triangle
