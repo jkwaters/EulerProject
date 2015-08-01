@@ -9,8 +9,7 @@
 import re
 
 def nameScore(data):
-	names = re.sub('"', '', open(data).readline()).split(',')
-	names.sort()
+	names = (re.sub('"', '', open(data).readline()).split(',')).sort()
 	for x in xrange(0,len(names)):
 		names[x] = sum([(ord(char)-96) for char in names[x].lower()]) * (x+1)
 	return sum(names)
