@@ -6,6 +6,7 @@
 
 
 def triangleNumberFactors():
+    '''doc string'''
     # Problem 12
     # 76576500 w/ 576 factors
     i = 1
