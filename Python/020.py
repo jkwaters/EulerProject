@@ -4,7 +4,10 @@
 # date : 2015.07.20
 
 import math
+
+
 def factorialDigitSum(n):
-	return sum([int(i) for i in str(math.factorial(n))])
+    return sum([int(i) for i in str(math.factorial(n))])
+
 
 print factorialDigitSum(100)
