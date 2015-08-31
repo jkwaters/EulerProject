@@ -6,11 +6,7 @@
 # date : 2013.12.10
 
 
-def problem1(n):
-    sum = 0
-    for i in xrange(0, n):
-        if i % 3 == 0 or i % 5 == 0:
-            sum += i
-    return sum
+def sumMultiples(n, m, limit):
+    return sum([i for i in xrange(0, limit) if (i % n == 0 or i % m == 0)])
 
-print problem1(1000)
+print sumMultiples(3, 5, 1000)

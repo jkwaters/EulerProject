@@ -5,18 +5,18 @@
 # date : 2013.12.10
 
 
-def problem2(n):
+def evenFibonacciSum(n):
     sum = 2
     nextTerm = 0
     term1 = 1
     term2 = 2
 
-    while nextTerm < n:
+    while(nextTerm < n):
         if nextTerm % 2 == 0:
             sum += nextTerm
-    nextTerm = term1 + term2
-    term1 = term2
-    term2 = nextTerm
+        nextTerm = term1 + term2
+        term1 = term2
+        term2 = nextTerm
     return sum
 
-print problem2(4000000)
+print evenFibonacciSum(4000000)

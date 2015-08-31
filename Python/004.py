@@ -5,15 +5,12 @@
 
 
 def largestPalindromeProduct():
-  largestPalindrome = 0
-  for i in range(1000,100,-1):
-    for j in range(1000,100,-1):
-      product = i*j
-      if str(product) == str(product)[::-1]:
-        # print i, j, product
-        if product > largestPalindrome:
-          largestPalindrome = product
-  
-  return largestPalindrome
+    largestPalindrome = 0
+    for i in xrange(999, 100, -1):
+        for j in xrange(999, 100, -1):
+            if str(i*j) == str(i*j)[::-1] and i*j > largestPalindrome:
+                largestPalindrome = i*j
+
+    return largestPalindrome
 
 print largestPalindromeProduct()
